@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nabeen/screen/landing_page.dart';
+import 'package:nabeen/screen/voluntary_service.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         //
         // )
       ),
-      home: LandingPage(),
+      home: VolutaryService(),
     );
   }
 }
