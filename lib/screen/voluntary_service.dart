@@ -36,7 +36,6 @@ class _VolutaryServiceState extends State<VolutaryService> {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20.0),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Center(
                           child: CircleAvatar(
@@ -52,6 +51,7 @@ class _VolutaryServiceState extends State<VolutaryService> {
                             ),
                           ),
                         ),
+                        Center(child: Text("Mrs. Nayla Haque",style: nabeenFontStyle(20, black, fw400))),
                         SizedBox(height: 25),
                         CustomButton(onTap: (){}, fontsize: 20, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 64, width: 348, text: "PROBLEM CATEGORY", FontWeight: fw400),
                         SizedBox(height: 15),
@@ -63,25 +63,28 @@ class _VolutaryServiceState extends State<VolutaryService> {
                         SizedBox(height: 15),
                         CustomButton(onTap: (){}, fontsize: 20, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 64, width: 348, text: "SUFFERING PEOPLE", FontWeight: fw400),
                         SizedBox(height: 15),
-                        Center(
-                          child: Container(
-                            height: 184,
-                            width: 348,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
-                              border: Border.all(color: customSkyBlue,width: 2),
-                            ),
-                            child: TextField(
-                              style: nabeenFontStyle(20, black, fw400),
-                              maxLines: 6,
-                              decoration: InputDecoration(
-                                hintText: "DESCRIPTION",
-                                  border: OutlineInputBorder(
-                                    borderSide: BorderSide.none
-                                  )
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("DESCRIPTION",style: nabeenFontStyle(20, black, fw400),),
+                            Container(
+                              height: 184,
+                              width: 348,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                border: Border.all(color: customSkyBlue,width: 2),
+                              ),
+                              child: TextField(
+                                style: nabeenFontStyle(20, black, fw400),
+                                maxLines: 6,
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderSide: BorderSide.none
+                                    )
+                                ),
                               ),
                             ),
-                          ),
+                          ],
                         ),
                         SizedBox(height: 30),
                         CustomButton(onTap: (){}, fontsize: 25, textColor: white, backgroundColor: customSkyBlue, borderColor: transparent, height: 87, width: 204, text: "SUBMIT", FontWeight: fw500)
