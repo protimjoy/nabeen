@@ -28,17 +28,19 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
-        width: width,
-        height: height,
-        child: Center(child: Text(text,textAlign: TextAlign.center,style: GoogleFonts.poppins(textStyle: TextStyle(color: textColor, fontSize: fontsize, fontWeight: FontWeight)))
-        ),
-        decoration: BoxDecoration(
-          color: backgroundColor,
-          borderRadius: BorderRadius.circular(50),
-          border: Border.all(
-            color: borderColor
-          )
+      child: Center(
+        child: Container(
+          width: width,
+          height: height,
+          child: Center(child: Text(text,textAlign: TextAlign.center,style: GoogleFonts.poppins(textStyle: TextStyle(color: textColor, fontSize: fontsize, fontWeight: FontWeight)))
+          ),
+          decoration: BoxDecoration(
+            color: backgroundColor,
+            borderRadius: BorderRadius.circular(50),
+            border: Border.all(
+              color: borderColor
+            )
+          ),
         ),
       ),
     );
