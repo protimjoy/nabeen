@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nabeen/screen/blood_donor_2.dart';
 import 'package:nabeen/screen/landing_page.dart';
 import 'package:nabeen/screen/voluntary_service.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         //
         // )
       ),
-      home: VolutaryService(),
+      home: BloodDonor2(),
     );
   }
 }
