@@ -16,7 +16,7 @@ class BloodDonor2 extends StatelessWidget {
               child: customAppBar()),
           Expanded(flex:9,
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 30.0),
+                padding: const EdgeInsets.symmetric(vertical: 30.0,horizontal: 10),
                 child: Column(
                   children: [
                     ImageSlider(),
@@ -30,13 +30,33 @@ class BloodDonor2 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "A+(POSITIVE)", FontWeight: fw500),
+                    Row(
+                      children: [
+                        CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "A+(POSITIVE)", FontWeight: fw500),
+                        Spacer()
+                      ],
+                    ),
                     SizedBox(height: 15),
-                    CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "AB-(NEGATIVE)", FontWeight: fw500),
+                    Row(
+                      children: [
+                        Spacer(),
+                        CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "AB-(NEGATIVE)", FontWeight: fw500),
+                      ],
+                    ),
                     SizedBox(height: 15),
-                    CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "O+(POSITIVE)", FontWeight: fw500),
+                    Row(
+                      children: [
+                        CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "O+(POSITIVE)", FontWeight: fw500),
+                        Spacer()
+                      ],
+                    ),
                     SizedBox(height: 15),
-                    CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "B-(NEGATIVE)", FontWeight: fw500),
+                    Row(
+                      children: [
+                        Spacer(),
+                        CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "B-(NEGATIVE)", FontWeight: fw500),
+                      ],
+                    ),
 
                   ],
                 ),
