@@ -3,6 +3,7 @@ import 'package:nabeen/theme.dart';
 import 'package:nabeen/widget/app_bar.dart';
 import 'package:nabeen/widget/custom_button.dart';
 import 'package:nabeen/widget/custom_textfield.dart';
+import 'package:nabeen/widget/profile_rounded.dart';
 
 class VolutaryService extends StatefulWidget {
   const VolutaryService({Key? key}) : super(key: key);
@@ -37,21 +38,7 @@ class _VolutaryServiceState extends State<VolutaryService> {
                     padding: const EdgeInsets.symmetric(vertical: 20.0),
                     child: Column(
                       children: [
-                        Center(
-                          child: CircleAvatar(
-                            backgroundColor: customSkyBlue,
-                            radius: 80,
-                            child: CircleAvatar(
-                              backgroundColor: white,
-                              radius: 75,
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("images/newsImage.png"),
-                                radius: 70,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Center(child: Text("Mrs. Nayla Haque",style: nabeenFontStyle(20, black, fw400))),
+                        ProfileRounded(),
                         SizedBox(height: 25),
                         CustomButton(onTap: (){}, fontsize: 20, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 64, width: 348, text: "PROBLEM CATEGORY", FontWeight: fw400),
                         SizedBox(height: 15),
