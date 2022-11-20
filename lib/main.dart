@@ -1,8 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:nabeen/screen/gov_represent.dart';
-import 'package:nabeen/screen/sdg_page_design.dart';
+import 'package:nabeen/screen/voluntary_services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +29,7 @@ class MyApp extends StatelessWidget {
         //
         // )
       ),
-      home: SDGPageDesign(),
+      home: VoluntaryServices(),
     );
   }
 }

@@ -57,7 +57,7 @@ class NewsShow extends StatelessWidget {
              CustomImageButton(onTap:(){},fontsize: 10, textColor: white, backgroundColor: Color(0xFF00B0FC), borderColor: transparent, height: 24, width: 71, text: "Share", FontWeight: fw400, img: "images/share.png"),
             ],
           ),
-          SizedBox(height: 15),
+          SizedBox(height: 20),
         ],
       ),
     );
