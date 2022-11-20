@@ -40,9 +40,7 @@ class LevelPage extends StatelessWidget {
                             child: Center(child: Text("LAVEL ${index+1}", style: nabeenFontStyle(14, black, fw500),)),
                           ),
                         );
-                      })
-                      ,
-
+                      }),
                     ),
                   ),
                 ))

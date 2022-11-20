@@ -1,10 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
-import 'package:nabeen/screen/aid_service.dart';
-import 'package:nabeen/screen/blood_donor_2.dart';
-import 'package:nabeen/screen/job_page.dart';
-import 'package:nabeen/screen/landing_page.dart';
-import 'package:nabeen/screen/level_page.dart';
-import 'package:nabeen/screen/voluntary_service.dart';
+import 'package:nabeen/screen/timeline.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +29,7 @@ class MyApp extends StatelessWidget {
         //
         // )
       ),
-      home: LevelPage(),
+      home: Timeline(),
     );
   }
 }
