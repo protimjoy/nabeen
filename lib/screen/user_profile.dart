@@ -62,14 +62,10 @@ class _ProfilePageState extends State<ProfilePage> {
                                 "OCCUPTION",
                                 style: nabeenFontStyle(25, black, fw300)
                               ),
-                                items: items
-                                    .map((item) =>
-                                    DropdownMenuItem<String>(
+                                items: items.map((item) => DropdownMenuItem<String>(
                                       value: item,
                                       child: Center(
-                                        child: Text(
-                                          item,
-                                          style: nabeenFontStyle(15, black, fw400),
+                                        child: Text(item, style: nabeenFontStyle(15, black, fw400),
                                         ),
                                       ),
                                     )).toList(),

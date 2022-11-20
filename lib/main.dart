@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:nabeen/screen/gov_represent.dart';
 import 'package:nabeen/screen/timeline.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         //
         // )
       ),
-      home: Timeline(),
+      home: GovRepresent(),
     );
   }
 }
