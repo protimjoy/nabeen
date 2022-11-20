@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:nabeen/screen/gov_represent.dart';
-import 'package:nabeen/screen/timeline.dart';
+import 'package:nabeen/screen/sdg_page_design.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         //
         // )
       ),
-      home: GovRepresent(),
+      home: SDGPageDesign(),
     );
   }
 }
