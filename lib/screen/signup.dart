@@ -33,7 +33,7 @@ class SignUp extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 30),
                           child: Text("First Name", style: nabeenFontStyle(18, black, fw300)),
                         ),
-                        CustomTextField(controller: firstName, hintText: "", textColor: black, fontsize: 25, FontWeight: fw400)
+                        CustomTextField(controller: firstName, hintText: "", textColor: black, borderColor: customBlue, fontsize: 25, FontWeight: fw400, height: 73, width: 339)
                       ],
                     ),
                     SizedBox(height: height*0.025),
@@ -44,7 +44,7 @@ class SignUp extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 30),
                           child: Text("Last Name", style: nabeenFontStyle(18, black, fw300)),
                         ),
-                        CustomTextField(controller: lastName, hintText: "", textColor: black, fontsize: 25, FontWeight: fw400)
+                        CustomTextField(controller: lastName, hintText: "", textColor: black, borderColor: customBlue, fontsize: 25, FontWeight: fw400, height: 73, width: 339)
                       ],
                     ),
                     SizedBox(height: height*0.025),
@@ -55,7 +55,7 @@ class SignUp extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 30),
                           child: Text("Email", style: nabeenFontStyle(18, black, fw300)),
                         ),
-                        CustomTextField(controller: email, hintText: "", textColor: black, fontsize: 25, FontWeight: fw400)
+                        CustomTextField(controller: email, hintText: "", textColor: black, borderColor: customBlue, fontsize: 25, FontWeight: fw400, height: 73, width: 339)
                       ],
                     ),
                     SizedBox(height: height*0.025),
@@ -66,7 +66,7 @@ class SignUp extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 30),
                           child: Text("Password", style: nabeenFontStyle(18, black, fw300)),
                         ),
-                        CustomTextField(controller: password, hintText: "", textColor: black, fontsize: 25, FontWeight: fw400)
+                        CustomTextField(controller: password, hintText: "", textColor: black, borderColor: customBlue, fontsize: 25, FontWeight: fw400, height: 73, width: 339)
                       ],
                     ),
                     SizedBox(height: height*0.025),
