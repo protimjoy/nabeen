@@ -24,9 +24,9 @@ class ForgotPassword extends StatelessWidget {
               SizedBox(height: height*.015),
               Text("Reset Password", style: nabeenFontStyle(35,black,fw400)),
               SizedBox(height: height*.07),
-              CustomTextField(controller: newPassword, hintText: "    New Password", textColor: Colors.black38, fontsize: 25, FontWeight: fw400),
+              CustomTextField(controller: newPassword, hintText: "    New Password", textColor: Colors.black38, borderColor: customBlue, fontsize: 25, FontWeight: fw400, height: 73, width: 339),
               SizedBox(height: height*.025),
-              CustomTextField(controller: reTypePassword, hintText: "    Re-Enter Password", textColor: Colors.black38, fontsize: 25, FontWeight: fw400),
+              CustomTextField(controller: reTypePassword, hintText: "    Re-Enter Password", textColor: Colors.black38, borderColor: customBlue, fontsize: 25, FontWeight: fw400, height: 73, width: 339),
               SizedBox(height: height*.06),
               CustomButton(
                   onTap: (){},

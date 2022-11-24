@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:nabeen/screen/student_banking_6.dart';
+import 'package:nabeen/screen/tutors_profile_design.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         //
         // )
       ),
-      home: StBanking6(),
+      home: TutorsProfileDesign(),
     );
   }
 }
