@@ -23,8 +23,8 @@ class NewsPortalPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    CustomButton(onTap: (){}, fontsize: 15, textColor: white, backgroundColor: Color(0xFF00B0FC), borderColor: transparent, height: 47, width: 187, text: "INTERNATIONAL", FontWeight: fw500),
-                    CustomButton(onTap: (){}, fontsize: 15, textColor: white, backgroundColor: Color(0xFF00B0FC), borderColor: transparent, height: 47, width: 187, text: "BANGLADESH AFFAIRS", FontWeight: fw500),
+                    CustomButton(onTap: (){}, fontsize: 15, textColor: white, backgroundColor: Color(0xFF00B0FC), borderColor: transparent, height: 50, width: 150, text: "INTERNATIONAL", FontWeight: fw500),
+                    CustomButton(onTap: (){}, fontsize: 15, textColor: white, backgroundColor: Color(0xFF00B0FC), borderColor: transparent, height: 50, width: 150, text: "BANGLADESH AFFAIRS", FontWeight: fw500),
                   ],
                 ),
               ),

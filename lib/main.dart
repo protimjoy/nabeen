@@ -1,8 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:nabeen/screen/student_banking_6.dart';
-import 'package:nabeen/screen/tutors_profile_design.dart';
+import 'package:nabeen/screen/landing_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,17 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
-        //iconTheme: IconThemeData(
-      //
-      // ),
-        // textTheme: TextTheme(
-        //
-        //   headline1:   GoogleFonts.poppins(
-        //       fontSize: 20, color: Colors.red, fontWeight: FontWeight.w600)
-        //
-        // )
       ),
-      home: TutorsProfileDesign(),
+      home: LandingPage(),
     );
   }
 }

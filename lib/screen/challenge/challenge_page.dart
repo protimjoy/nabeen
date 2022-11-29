@@ -79,49 +79,27 @@ class ChallengePage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 20.0,top: 15,bottom: 10),
                         child: Text("TOP 100 PROFILES", style: nabeenFontStyle(14, black, fw500),),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            height: 140,
-                            width: 140,
-                            decoration: BoxDecoration(
-                                color: Color(0xFFD9D9D9),
-                                borderRadius: BorderRadius.circular(30)
-                            ),
-                          ),
-                          Container(
-                            height: 140,
-                            width: 140,
-                            decoration: BoxDecoration(
-                                color: Color(0xFFD9D9D9),
-                                borderRadius: BorderRadius.circular(30)
-                            ),
-                          ),
-                        ],
+                      Container(
+                        // height: 350,
+                        child: GridView.count(
+                          crossAxisCount: 2,
+                          shrinkWrap: true,
+                          physics: NeverScrollableScrollPhysics(),
+                          children: List.generate(100, (index){
+                            return Center(
+                              child: Container(
+                                height: 140,
+                                width: 140,
+                                decoration: BoxDecoration(
+                                    color: Color(0xFFD9D9D9),
+                                    borderRadius: BorderRadius.circular(30)
+                                ),
+                              ),
+                            );
+                          }),
+                        ),
                       ),
-                      SizedBox(height: 30),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            height: 140,
-                            width: 140,
-                            decoration: BoxDecoration(
-                                color: Color(0xFFD9D9D9),
-                                borderRadius: BorderRadius.circular(30)
-                            ),
-                          ),
-                          Container(
-                            height: 140,
-                            width: 140,
-                            decoration: BoxDecoration(
-                                color: Color(0xFFD9D9D9),
-                                borderRadius: BorderRadius.circular(30)
-                            ),
-                          ),
-                        ],
-                      ),
+                      SizedBox(height: 20.0,)
                     ],
                   ),
                 ))

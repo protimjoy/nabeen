@@ -15,57 +15,121 @@ class AidService extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 40.0,horizontal: 10),
-                    child: Column(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 30.0, horizontal: 20),
+                child: Column(
+                  children: [
+                    ImageSlider(),
+                    SizedBox(height: 25),
+                    CustomButton(
+                        onTap: () {},
+                        fontsize: 16,
+                        textColor: white,
+                        backgroundColor: customBlue,
+                        borderColor: customSkyBlue,
+                        height: 70,
+                        width: 300,
+                        text: "SEND A REQUEST",
+                        FontWeight: fw500),
+                    SizedBox(height: 30),
+                    Row(
                       children: [
-                        ImageSlider(),
-                        SizedBox(height: 25),
-                        CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: transparent, borderColor: customSkyBlue, height: 73, width: 354, text: "SEND A REQUEST", FontWeight: fw400),
-                        SizedBox(height: 20),
-                        Row(
-                          children: [
-                            CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "FOOD", FontWeight: fw500),
-                            Spacer()
-                          ],
-                        ),
-                        SizedBox(height: 15),
-                        Row(
-                          children: [
-                            Spacer(),
-                            CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "TREATMENT", FontWeight: fw500),
-                          ],
-                        ),
-                        SizedBox(height: 15),
-                        Row(
-                          children: [
-                            CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "EDUCATION", FontWeight: fw500),
-                            Spacer()
-                          ],
-                        ),
-                        SizedBox(height: 15),
-                        Row(
-                          children: [
-                            Spacer(),
-                            CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "CLOTHING", FontWeight: fw500),
-                          ],
-                        ),
-                        SizedBox(height: 15),
-                        Row(
-                          children: [
-                            CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "SECURITY", FontWeight: fw500),
-                            Spacer()
-                          ],
-                        ),
-                        SizedBox(height: 15),
-                        Row(
-                          children: [
-                            Spacer(),
-                            CustomButton(onTap: (){}, fontsize: 16, textColor: black, backgroundColor: white, borderColor: customSkyBlue, height: 82, width: 233, text: "ACOMODATION", FontWeight: fw500),
-                          ],
-                        ),
+                        CustomButton(
+                            onTap: () {},
+                            fontsize: 16,
+                            textColor: black,
+                            backgroundColor: white,
+                            borderColor: customSkyBlue,
+                            height: 60,
+                            width: 200,
+                            text: "FOOD",
+                            FontWeight: fw500),
+                        Spacer()
                       ],
                     ),
-                  ),
+                    SizedBox(height: 15),
+                    Row(
+                      children: [
+                        Spacer(),
+                        CustomButton(
+                            onTap: () {},
+                            fontsize: 16,
+                            textColor: black,
+                            backgroundColor: white,
+                            borderColor: customSkyBlue,
+                            height: 60,
+                            width: 200,
+                            text: "TREATMENT",
+                            FontWeight: fw500),
+                      ],
+                    ),
+                    SizedBox(height: 15),
+                    Row(
+                      children: [
+                        CustomButton(
+                            onTap: () {},
+                            fontsize: 16,
+                            textColor: black,
+                            backgroundColor: white,
+                            borderColor: customSkyBlue,
+                            height: 60,
+                            width: 200,
+                            text: "EDUCATION",
+                            FontWeight: fw500),
+                        Spacer()
+                      ],
+                    ),
+                    SizedBox(height: 15),
+                    Row(
+                      children: [
+                        Spacer(),
+                        CustomButton(
+                            onTap: () {},
+                            fontsize: 16,
+                            textColor: black,
+                            backgroundColor: white,
+                            borderColor: customSkyBlue,
+                            height: 60,
+                            width: 200,
+                            text: "CLOTHING",
+                            FontWeight: fw500),
+                      ],
+                    ),
+                    SizedBox(height: 15),
+                    Row(
+                      children: [
+                        CustomButton(
+                            onTap: () {},
+                            fontsize: 16,
+                            textColor: black,
+                            backgroundColor: white,
+                            borderColor: customSkyBlue,
+                            height: 60,
+                            width: 200,
+                            text: "SECURITY",
+                            FontWeight: fw500),
+                        Spacer()
+                      ],
+                    ),
+                    SizedBox(height: 15),
+                    Row(
+                      children: [
+                        Spacer(),
+                        CustomButton(
+                            onTap: () {},
+                            fontsize: 16,
+                            textColor: black,
+                            backgroundColor: white,
+                            borderColor: customSkyBlue,
+                            height: 60,
+                            width: 200,
+                            text: "ACOMODATION",
+                            FontWeight: fw500),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

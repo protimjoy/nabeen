@@ -4,15 +4,15 @@ import 'package:nabeen/widget/image_slider.dart';
 import 'package:nabeen/theme.dart';
 import 'package:nabeen/screen/sdg/sdg_details.dart';
 
-class SDGPage extends StatefulWidget {
-  const SDGPage({Key? key}) : super(key: key);
+class VisionPage extends StatefulWidget {
+  const VisionPage({Key? key}) : super(key: key);
 
   @override
-  State<SDGPage> createState() => _SDGPageState();
+  State<VisionPage> createState() => _VisionPageState();
 }
 
-class _SDGPageState extends State<SDGPage> {
-  static List<String> _sdgGameTarget = [
+class _VisionPageState extends State<VisionPage> {
+  static List<String> _visionTarget = [
     '1.1  TARGET & INDICATORS',
     '1.2  TARGET & INDICATORS',
     '1.3  TARGET & INDICATORS',
@@ -21,7 +21,7 @@ class _SDGPageState extends State<SDGPage> {
     '1.6  TARGET & INDICATORS',
   ];
 
-  static List<String> _sdgGameTargetDetails = [
+  static List<String> _visionTargetDetails = [
     'One Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     'Two Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     'Three Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
@@ -30,7 +30,7 @@ class _SDGPageState extends State<SDGPage> {
     'Six Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
   ];
 
-  final List<SDGGoalTarget> sdgTarget = List.generate(_sdgGameTarget.length, (index) => SDGGoalTarget('${_sdgGameTarget[index]}', '${_sdgGameTargetDetails[index]}'));
+  final List<SDGGoalTarget> sdgTarget = List.generate(_visionTarget.length, (index) => SDGGoalTarget('${_visionTarget[index]}', '${_visionTargetDetails[index]}'));
 
   @override
   Widget build(BuildContext context) {
@@ -46,10 +46,10 @@ class _SDGPageState extends State<SDGPage> {
                   padding: const EdgeInsets.symmetric(vertical: 15),
                   child: ImageSlider(),
                 ),
-                Center(child: Text("SDG GOAL 1",style: nabeenFontStyle(30, customSkyBlue, fw500),)),
+                Center(child: Text("VISION 2041",style: nabeenFontStyle(30, customSkyBlue, fw500),)),
                 Padding(
                   padding: const EdgeInsets.only(left: 25,bottom: 10, top: 15),
-                  child: Text("GOAL DESCRIPTION",style: nabeenFontStyle(15, black, fw500),),
+                  child: Text("VISION DESCRIPTION",style: nabeenFontStyle(15, black, fw500),),
                 ),
                 Center(
                   child: Container(
@@ -64,13 +64,13 @@ class _SDGPageState extends State<SDGPage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 20.0, left: 25,bottom: 15),
-                  child: Text("GOAL TARGET",style: nabeenFontStyle(15, black, fw500),),
+                  child: Text("VISION TARGET",style: nabeenFontStyle(15, black, fw500),),
                 ),
 
                 ListView.builder(
                   physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true, // This is important ⬇️️
-                  itemCount: _sdgGameTarget.length,
+                  itemCount: _visionTarget.length,
                   itemBuilder: (_, index) {
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 15.0,left: 20,right: 20),
@@ -91,7 +91,7 @@ class _SDGPageState extends State<SDGPage> {
                                 )
                               ]
                           ),
-                          child: Center(child: Text(_sdgGameTarget[index],style: nabeenFontStyle(14, black, fw300),)),
+                          child: Center(child: Text(_visionTarget[index],style: nabeenFontStyle(14, black, fw300),)),
                         ),
                       ),
                     );

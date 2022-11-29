@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:nabeen/screen/sdg/model_data.dart';
+import 'package:nabeen/screen/vision/model_data.dart';
 import 'package:nabeen/theme.dart';
 import 'package:nabeen/widget/image_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SDGDetails extends StatelessWidget {
-  final SDGGoalTarget sdggoaltarget;
-   SDGDetails({Key? key, required this.sdggoaltarget}) : super(key: key);
+class VisionDetails extends StatelessWidget {
+  final VisionTarget visionTarget;
+  VisionDetails({Key? key, required this.visionTarget}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,10 +37,10 @@ class SDGDetails extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 50),
-                    Text(sdggoaltarget.headings,style: nabeenFontStyle(20, black, fw300),),
+                    Text(visionTarget.headings,style: nabeenFontStyle(20, black, fw300),),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 20.0),
-                      child: Text(sdggoaltarget.description,style: GoogleFonts.portLligatSlab(color: black, fontSize: 20, fontWeight: fw400)),
+                      child: Text(visionTarget.description,style: GoogleFonts.portLligatSlab(color: black, fontSize: 20, fontWeight: fw400)),
                     ),
                   ],
                 ),

@@ -17,7 +17,7 @@ class ProfileRounded extends StatelessWidget {
                 backgroundColor: white,
                 radius: 75,
                 child: CircleAvatar(
-                  backgroundImage: AssetImage("images/newsImage.png"),
+                  backgroundImage: NetworkImage("https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"),
                   radius: 70,
                 ),
               ),

@@ -19,36 +19,43 @@ class _LoginPageState extends State<LoginPage> {
     return SafeArea(
       child: Scaffold(
           body: Stack(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 240.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("images/login_bg.png"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 240.0),
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("images/login_bg.png"),
+                  fit: BoxFit.fill,
                 ),
               ),
-              Positioned(
-                  left: 0,
-                  right: 0,
-                  top: 0,
-                  child: Image(image: AssetImage("images/login_img.png"),height: height*.4,)
-              ),
-              Positioned(
-                left: 0,
-                right: 0,
-                bottom: 0,
-                  child: Column(
+            ),
+          ),
+          Positioned(
+              left: 0,
+              right: 0,
+              top: 0,
+              child: Image(
+                image: AssetImage("images/login_img.png"),
+                height: height * .4,
+              )),
+          Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Column(
                 children: [
-                  Text("Welcome to Nabeen 👋",style: nabeenFontStyle(24,customBlue,fw600)),
-                  Text("Improve your skills for a glorious future",style: nabeenFontStyle(18,black,fw300)),
-                  SizedBox(height: height*.04,),
+                  Text("Welcome to Nabeen 👋",
+                      style: nabeenFontStyle(20, customBlue, fw600)),
+                  Text("Improve your skills for a glorious future",
+                      style: nabeenFontStyle(14, black, fw300)),
+                  SizedBox(
+                    height: height * .04,
+                  ),
                   CustomButton(
-                      onTap: (){
-                        Navigator.of(context).push(MaterialPageRoute(builder: (_)=>BottomNavBarCurved()));
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (_) => BottomNavBarCurved()));
                       },
                       fontsize: 18,
                       textColor: white,
@@ -56,20 +63,24 @@ class _LoginPageState extends State<LoginPage> {
                       borderColor: transparent,
                       height: 65,
                       width: 329,
-                      text: "Sign in", FontWeight: FontWeight.w600),
-                  SizedBox(height: height*.005),
+                      text: "Sign in",
+                      FontWeight: FontWeight.w600),
+                  SizedBox(height: height * .005),
                   Padding(
                     padding: const EdgeInsets.only(left: 150.0),
                     child: GestureDetector(
-                        onTap: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (_)=>ForgotPassword()));
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => ForgotPassword()));
                         },
-                        child: Text("Forget Password?",style: nabeenFontStyle(15, customPink, fw400))),
+                        child: Text("Forget Password?",
+                            style: nabeenFontStyle(15, customPink, fw400))),
                   ),
-                  SizedBox(height: height*.01),
+                  SizedBox(height: height * .01),
                   GestureDetector(
-                    onTap: (){
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_)=>LoginPage()));
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (_) => LoginPage()));
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -84,31 +95,37 @@ class _LoginPageState extends State<LoginPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Image.asset("images/fb_logo.png"),
-                          Text("Continue with Facebook", style: nabeenFontStyle(18,customBlue,fw500),),
+                          Text(
+                            "Continue with Facebook",
+                            style: nabeenFontStyle(18, customBlue, fw500),
+                          ),
                         ],
                       ),
                     ),
                   ),
-                  SizedBox(height: height*.02),
+                  SizedBox(height: height * .02),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Not a member",style: nabeenFontStyle(15, customBlue, fw400)),
+                      Text("Not a member",
+                          style: nabeenFontStyle(15, customBlue, fw400)),
                       GestureDetector(
-                          onTap: (){},
+                          onTap: () {},
                           child: GestureDetector(
-                              onTap: (){
-                                Navigator.of(context).push(MaterialPageRoute(builder: (_)=>SignUp()));
+                              onTap: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (_) => SignUp()));
                               },
-                              child: Text("?Register Now",style: nabeenFontStyle(15, customPink, fw400)))),
+                              child: Text("?Register Now",
+                                  style:
+                                      nabeenFontStyle(15, customPink, fw400)))),
                     ],
                   ),
-                  SizedBox(height: height*.05),
+                  SizedBox(height: height * .05),
                 ],
               )),
-            ],
-          )
-      ),
+        ],
+      )),
     );
   }
 }
