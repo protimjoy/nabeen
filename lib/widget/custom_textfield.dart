@@ -7,27 +7,21 @@ class CustomTextField extends StatelessWidget {
     required this.controller,
     required this.hintText,
     required this.textColor,
-    required this.borderColor,
     required this.fontsize,
-    required this.FontWeight,
-    required this.height,
-    required this.width,
+    required this.FontWeight
   }) : super(key: key);
 
   final TextEditingController controller;
   final String hintText;
   final Color textColor;
-  final Color borderColor;
   final FontWeight;
   double fontsize;
-  double height;
-  double width;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height,
-      width: width,
+      height: 73,
+      width: 339,
       child: TextFormField(
         controller: controller,
         style: GoogleFonts.poppins(textStyle: TextStyle(color:Colors.black, fontSize:fontsize, fontWeight: FontWeight)),
@@ -35,7 +29,7 @@ class CustomTextField extends StatelessWidget {
             enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(50),
             borderSide: BorderSide(
-                color: borderColor,
+                color: customBlue,
                 width: 1.0
             )
           ),
