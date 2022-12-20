@@ -20,8 +20,8 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 73,
-      width: 339,
+      height: 65,
+      width: 340,
       child: TextFormField(
         controller: controller,
         style: GoogleFonts.poppins(textStyle: TextStyle(color:Colors.black, fontSize:fontsize, fontWeight: FontWeight)),
@@ -47,7 +47,7 @@ class CustomTextField extends StatelessWidget {
                     width: 1.0
                 )
             ),
-          hintText: null == hintText? "":hintText,
+          hintText: null == hintText ? "" : hintText,
           hintStyle: GoogleFonts.poppins(textStyle: TextStyle(color:textColor, fontSize:fontsize, fontWeight: FontWeight))
         ),
       ),
