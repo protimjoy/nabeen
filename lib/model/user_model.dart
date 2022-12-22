@@ -1,36 +1,51 @@
 class UserModel {
   UserModel({
-    this.name,
-    this.status,
-    this.img,
-    this.designation
+    this.name, this.status, this.img, this.designation, this.zone
   });
-  String? name, status, img, designation;
+  String? name, status, img, designation,zone;
   static List<UserModel> users(){
     return [
       UserModel(
-        name: "Sheikh Hasina",
-        status: 'online',
-        img: 'images/profile_image.png',
-        designation: 'Parliamentarian'
-      ),
-      UserModel(
-        name: "Khaleda Jia",
-        status: 'online',
-        img: 'images/profile_image.png',
-        designation: 'Parliamentarian'
-      ),
-      UserModel(
           name: "Joy Protim",
           status: 'online',
-          img: 'images/profile_image.png',
-          designation: 'Parliamentarian'
+          img: 'images/newsImage.png',
+          designation: 'Parliamentarian',
+          zone: 'Zone 1'
       ),
       UserModel(
           name: "MD. Rooman",
           status: 'online',
           img: 'images/profile_image.png',
-          designation: 'Parliamentarian'
+          designation: 'Parliamentarian',
+          zone: 'Zone 1'
+      ),
+      UserModel(
+          name: "Joy Protim",
+          status: 'online',
+          img: 'images/newsImage.png',
+          designation: 'Parliamentarian',
+          zone: 'Zone 1'
+      ),
+      UserModel(
+          name: "MD. Rooman",
+          status: 'online',
+          img: 'images/profile_image.png',
+          designation: 'Parliamentarian',
+          zone: 'Zone 1'
+      ),
+      UserModel(
+          name: "Joy Protim",
+          status: 'online',
+          img: 'images/newsImage.png',
+          designation: 'Parliamentarian',
+          zone: 'Zone 1'
+      ),
+      UserModel(
+          name: "MD. Rooman",
+          status: 'online',
+          img: 'images/profile_image.png',
+          designation: 'Parliamentarian',
+          zone: 'Zone 1'
       ),
     ];
   }

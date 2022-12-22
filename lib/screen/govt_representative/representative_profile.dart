@@ -4,19 +4,22 @@ import 'package:nabeen/widget/app_bar.dart';
 import 'package:nabeen/widget/image_slider.dart';
 import 'package:nabeen/widget/profile_header.dart';
 
-import '../model/user_model.dart';
-import 'Tab_Pages/tabpage1.dart';
-import 'Tab_Pages/tabpage2.dart';
-import 'drawer.dart';
+import '../../model/user_model.dart';
+import '../Tab_Pages/tabpage1.dart';
+import '../Tab_Pages/tabpage2.dart';
+import '../drawer.dart';
 
 class RepresentativeProfile extends StatefulWidget {
-   RepresentativeProfile({Key? key}) : super(key: key);
 
+  RepresentativeProfile({Key? key,required this.profileData}) : super(key: key);
+  int profileData;
   @override
   State<RepresentativeProfile> createState() => _RepresentativeProfileState();
 }
 
 class _RepresentativeProfileState extends State<RepresentativeProfile> with TickerProviderStateMixin {
+  final userData = UserModel.users();
+
   final GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -39,7 +42,32 @@ class _RepresentativeProfileState extends State<RepresentativeProfile> with Tick
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      ProfileHeader(),
+                      Container(
+                        height: 50,
+                        width: 260,
+                        decoration: BoxDecoration(
+                            color: Color(0xFFF1F1F1),
+                            borderRadius: BorderRadius.circular(60)
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Image.asset("images/verified.png"),
+                            Text("${userData[widget.profileData].name}",style: nabeenFontStyle(20, Color(0xFF241352), fw600)),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry.",textAlign: TextAlign.center, style: nabeenFontStyle(14, Color(0xFF241352), fw300),),
+                      ),
+                      SizedBox(height: 15),
+                      CircleAvatar(
+                        radius: 80,
+                        backgroundImage: AssetImage("${userData[widget.profileData].img}"),
+                      ),
+                      SizedBox(height: 20),
                       Container(
                         height: 65,
                         width: 280,
@@ -47,7 +75,7 @@ class _RepresentativeProfileState extends State<RepresentativeProfile> with Tick
                           borderRadius: BorderRadius.circular(50),
                           border: Border.all(color: customSkyBlue)
                         ),
-                        child: Center(child: Text("DESIGNATION",style: nabeenFontStyle(16, black, fw500),)),
+                        child: Center(child: Text("${userData[widget.profileData].designation}",style: nabeenFontStyle(16, black, fw500),)),
                       ),
                       SizedBox(height: height*.020),
                       Container(
@@ -57,7 +85,7 @@ class _RepresentativeProfileState extends State<RepresentativeProfile> with Tick
                           borderRadius: BorderRadius.circular(50),
                           border: Border.all(color: customSkyBlue)
                         ),
-                        child: Center(child: Text("Zone",style: nabeenFontStyle(16, black, fw500),)),
+                        child: Center(child: Text("${userData[widget.profileData].zone}",style: nabeenFontStyle(16, black, fw500),)),
                       ),
                       SizedBox(height: height*.025),
                       ImageSlider(),

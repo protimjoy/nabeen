@@ -1,16 +1,12 @@
 import 'dart:io';
 
-import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:nabeen/screen/drawer.dart';
-import 'package:nabeen/screen/home_page.dart';
-import 'package:nabeen/screen/landing_page.dart';
-import 'package:nabeen/screen/newsfeed_page.dart';
 import 'package:nabeen/theme.dart';
 import 'package:nabeen/widget/app_bar.dart';
 import 'package:nabeen/widget/shadow_button.dart';
 
-import '../widget/zone_dropdown.dart';
+import '../../widget/zone_dropdown.dart';
 
 class GovRepresent extends StatefulWidget {
   const GovRepresent({Key? key}) : super(key: key);

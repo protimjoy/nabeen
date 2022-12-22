@@ -1,7 +1,7 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 
-import '../screen/gov_represen_profiles.dart';
+import '../screen/govt_representative/gov_represen_profiles.dart';
 import '../screen/home_page.dart';
 import '../screen/landing_page.dart';
 import '../theme.dart';

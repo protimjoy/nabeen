@@ -1,19 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nabeen/screen/representative_profile.dart';
+import 'package:nabeen/screen/govt_representative/representative_profile.dart';
 import 'package:nabeen/theme.dart';
 import 'package:nabeen/widget/image_slider.dart';
-import '../model/user_model.dart';
-import '../widget/app_bar.dart';
-import '../widget/zone_dropdown.dart';
-import 'drawer.dart';
+import '../../model/user_model.dart';
+import '../../widget/app_bar.dart';
+import '../../widget/zone_dropdown.dart';
+import '../drawer.dart';
 
-class GovRepresentativeProfilesZone1 extends StatelessWidget {
+class GovRepresentativeProfilesZone1 extends StatefulWidget {
    GovRepresentativeProfilesZone1({Key? key}) : super(key: key);
+
+  @override
+  State<GovRepresentativeProfilesZone1> createState() => _GovRepresentativeProfilesZone1State();
+}
+
+class _GovRepresentativeProfilesZone1State extends State<GovRepresentativeProfilesZone1> {
    final userData = UserModel.users();
+   int indexvalu=0;
    TextEditingController searchprofile = TextEditingController();
 
   final GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -83,7 +91,10 @@ class GovRepresentativeProfilesZone1 extends StatelessWidget {
                               var user = userData[index];
                               return GestureDetector(
                                 onTap: (){
-                                  Navigator.of(context).push(MaterialPageRoute(builder: (_)=>RepresentativeProfile()));
+                                  setState((){
+                                    indexvalu=index;
+                                  });
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (_)=>RepresentativeProfile(profileData: indexvalu)));
                                 },
                                 child: Card(
                                   color: Color(0xFFF9F9F9),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nabeen/screen/aid_service.dart';
 import 'package:nabeen/screen/challenge/challenge_page.dart';
-import 'package:nabeen/screen/gov_represent.dart';
+import 'package:nabeen/screen/govt_representative/gov_represent.dart';
 import 'package:nabeen/screen/level_page.dart';
 import 'package:nabeen/screen/vision/vision_page.dart';
 import 'package:nabeen/theme.dart';

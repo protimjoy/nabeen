@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:nabeen/model/vision_model_data.dart';
 import 'package:nabeen/theme.dart';
 import 'package:nabeen/widget/image_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../model/sdg_challenge_model_data.dart';
 import '../../widget/custom_button.dart';
 import '../sdg/upload_challenge_document.dart';
 
-class VisionDetails extends StatefulWidget {
-  VisionDetails({Key? key,  this.modelData,}) : super(key: key);
-  final VisionModel? modelData;
+class ChallengeDetails extends StatefulWidget {
+  ChallengeDetails({Key? key,  this.modelData,}) : super(key: key);
+  final SDGChallengeModel? modelData;
 
   @override
-  State<VisionDetails> createState() => _VisionDetailsState();
+  State<ChallengeDetails> createState() => _ChallengeDetailsState();
 }
 
-class _VisionDetailsState extends State<VisionDetails> {
+class _ChallengeDetailsState extends State<ChallengeDetails> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -63,7 +63,7 @@ class _VisionDetailsState extends State<VisionDetails> {
                 padding: const EdgeInsets.only(top: 10.0, bottom: 20),
                 child: CustomButton(
                     onTap: (){
-                      Navigator.of(context).push(MaterialPageRoute(builder: (_)=>UploadChallengeDocument(visionModelData: widget.modelData,)));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (_)=>UploadChallengeDocument(sdgChallengeModelData: widget.modelData,)));
                     },
                     fontsize: 18,
                     textColor: white,
